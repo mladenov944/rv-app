@@ -1,0 +1,125 @@
+/* Background video styling */
+.app-container {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place the video behind other content */
+  overflow: hidden;
+}
+
+#background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire area */
+  opacity: 0.5; /* Makes the video semi-transparent */
+}
+
+/* Top toolbar */
+mat-toolbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Spacer for toolbar */
+.spacer {
+  flex: 1 1 auto;
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity (0.5) to darken or lighten the video */
+}
+
+/* Main container for side menu and content */
+.main-container {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 64px); /* Adjust this if your toolbar height is different */
+  margin-top: 64px; /* Adjust this if your toolbar height is different */
+}
+
+/* Side menu */
+.side-menu {
+  width: 250px; /* Adjust width as needed */
+  background-color: rgba(0, 0, 0, 0.6); /* Transparent black background */
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  position: fixed; /* Set position to fixed */
+  top: 64px; /* Adjust top position according to your toolbar height */
+  bottom: 0; /* Set bottom to 0 to stretch to the bottom of the viewport */
+  overflow-y: auto; /* Add scroll if content exceeds viewport */
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-menu ul li {
+  margin-bottom: 15px;
+}
+
+.side-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.side-menu ul li a:hover {
+  color: #ff6600;
+}
+
+/* Content area */
+.content {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-left: 250px; /* Adjust margin to match the width of your side menu */
+}
+
+.social-links {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.social-links li {
+  margin-right: 15px;
+}
+
+.social-links li:last-child {
+  margin-right: 0;
+}
+
+.social-links a {
+  color: #fff; /* Social links color */
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.social-links a:hover {
+  color: #ff6600; /* Social links hover color */
+}
+
