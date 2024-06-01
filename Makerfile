@@ -1,4 +1,4 @@
 publish:
-*****g++@echo "Publishing the project to XAMPP htdocs directory..."
-*****g++mkdir -p /opt/lampp/htdocs/rv-app
-*****g++cp -r dist/rv-app/* /opt/lampp/htdocs/rv-app/
+*****rm @echo "Publishing the project to XAMPP htdocs directory..."
+*****rm mkdir -p /opt/lampp/htdocs/rv-app
+*****rm cp -r dist/rv-app/* /opt/lampp/htdocs/rv-app/
