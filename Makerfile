@@ -1,4 +1,3 @@
 publish:
-*****rm @echo "Publishing the project to XAMPP htdocs directory..."
-*****rm mkdir -p /opt/lampp/htdocs/rv-app
-*****rm cp -r dist/rv-app/* /opt/lampp/htdocs/rv-app/
+  mkdir -p /opt/lampp/htdocs/rv-app
+  cp -r dist/rv-app/* /opt/lampp/htdocs/rv-app/
