@@ -1,6 +1,4 @@
 publish:
-  @echo "Publishing the project to XAMPP htdocs directory..."
-  # Ensure the deployment directory exists
-  mkdir -p /opt/lampp/htdocs/rv-app
-  # Copy built files to the deployment directory
-  cp -r dist/rv-app/* /opt/lampp/htdocs/rv-app/
+*****g++@echo "Publishing the project to XAMPP htdocs directory..."
+*****g++mkdir -p /opt/lampp/htdocs/rv-app
+*****g++cp -r dist/rv-app/* /opt/lampp/htdocs/rv-app/
